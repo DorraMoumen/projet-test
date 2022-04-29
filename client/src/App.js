@@ -18,7 +18,9 @@ import Login from './components/Login'
 
 import UploadFiles from './components/uploadfiles';
 
+import Test from './components/Test';
 
+import Home from './components/Home';
 import SignUp from './components/Signup';
 import {
   Switch,
@@ -26,56 +28,63 @@ import {
   Link,
 } from "react-router-dom";
 
+
 //import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className="App">
     
-
-    <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-        <Route path='/' element={<Home/>} />
-        <Route path="/about" component={<About/>} />
-        <Route path='/users' render={(props)=> <Users {...props}/>} />  
-        
-        </Switch> 
+    
+<Test/>
   
-        
+       
       </div>
   
   );
 }
-function Home() {
-  return <h2>Home</h2>;
-}
 
-function About() {
-  return<div> 
-  <h2>About</h2>
-  <button> Go Back </button>
-  </div>
-  ;
-}
+ //<nav>
+    //       <ul>
+    //         <li>
+    //           <Link to="/">Home</Link>
+    //         </li>
+    //         <li>
+    //           <Link to="/about">About</Link>
+    //         </li>
+    //         <li>
+    //           <Link to="/users">Users</Link>
+    //         </li>
+    //       </ul>
+    //     </nav>
 
-function Users() {
-  return <h2>Users</h2>;
-}
+    //     {/* A <Switch> looks through its children <Route>s and
+    //         renders the first one that matches the current URL. */}
+    //     <Switch>
+    //     <Route path='/' element={<Home/>} />
+    //     <Route path="/about" component={<About/>} />
+    //     <Route path='/users' render={(props)=> <Users {...props}/>} />  
+        
+    //     </Switch> 
+  
+
+
+
+// function Home() {
+//   return <h2>Home</h2>;
+// }
+
+// function About() {
+//   return<div> 
+//   <h2>About</h2>
+//   <button> Go Back </button>
+//   </div>
+//   ;
+// }
+
+// function Users() {
+//   return <h2>Users</h2>;
+// }
 
 
     

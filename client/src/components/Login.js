@@ -15,8 +15,8 @@ const Login =()=> {
    const res= await axios.post("http://localhost:5000/api/user/login",{email:Email,motdepasse:Motdepasse})
    await console.log( res.data.token);
    await localStorage.setItem('token', res.data.token);
-    
-   } catch (error) {
+    alert("Bienvenue entre nous ! ")
+   } catch (error) { 
      alert(error.response.data.msg)
    }}
         return (

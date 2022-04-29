@@ -10,10 +10,12 @@ const  SignUp =() =>{
       const [Email,setEmail]=useState('') 
       const [Motdepasse,setMotdepasse]=useState('') 
       const [Genre,setGenre]=useState('') 
+     
       const HandleSubmit = async() => { 
      try {
       await axios.post("http://localhost:5000/api/user/register",{nom:Nom,prenom:prenom,email:Email,motdepasse:Motdepasse,genre:Genre})
-     } catch (error) {
+     alert("Bienvenue sur SOLVY !") 
+    } catch (error) {
        alert(error.response.data.msg)
      }
         

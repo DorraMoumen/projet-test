@@ -112,14 +112,14 @@ app.use(express.json())
    
 /*************************************** GET ALL USERS *********************************************/
 
-//app.get("/allusers",async(req,res)=>{
- //   try {
-    //    const data=await users.find().exec()
-    //    res.status(200).send(data)
-   // } catch (error) {
-   //     error? res.send('sth went wrong'):res.send('succeeded')
-   // }
-// })
+app.get("/allusers",async(req,res)=>{
+    try {
+       const data=await users.find().exec()
+       res.status(200).send(data)
+   } catch (error) {
+       error? res.send('sth went wrong'):res.send('succeeded')
+   }
+})
 
 
 /******************************************** GET USER BY EMAIL ************************************/

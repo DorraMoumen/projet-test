@@ -11,8 +11,9 @@ export class Navbar1 extends Component {
   
   <Navbar bg="dark" variant="dark">
     <Container>
-      <Navbar.Brand href="#home">
-      <img src={logo1} style={{width:"30px"}}  className="d-inline-block align-top"/>
+      <Navbar.Brand href="#home" className='float-right'>
+      <img src={logo1} style={{width:"30px" ,
+    }}  className="d-inline-block align-top  "/>
       E-MORE
      
 

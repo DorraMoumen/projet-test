@@ -12,7 +12,7 @@ router.post('/user/register',register,async(req,res)=>{
    const {nom,prenom,email,motdepasse,genre}=req.body
    const searchAdmin= await users.findOne({email}).exec()
    if (searchAdmin){
-       return (res.status(401).json({msg:'cet administrateur existe déjà !'}))
+       return (res.status(401).json({msg:'cet utilisateur est inscrit déjà  !'}))
    }
    if (email==="dmoumen011@gmail.com"){
     const hashedPassword= await bcrypt.hash( motdepasse,10)
@@ -66,6 +66,10 @@ router.get('/user/auth',async(req,res)=>{
 
     }
 })
+/************************************PROFILE*******************************************************/
+// router.get('/user/Profil')async(req,res)=>{
 
+    
+// }
 
 module.exports=router  

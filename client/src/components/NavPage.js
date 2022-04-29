@@ -16,8 +16,8 @@ const NavPage = (props) => {
          
           navbarScroll 
         >
-          <Nav.Link href="#action1" id='navelement' >HOME</Nav.Link>
-          <Nav.Link href="#action2"   id='navelement' >SIGN IN</Nav.Link>
+          <Nav.Link href="#Accueil"  to="/" id='navelement' >ACCUEIL</Nav.Link>
+          <Nav.Link href="#s'inscrire"  to="/api/user/register/" id='navelement' >SIGN IN</Nav.Link>
           
             <Nav.Link href="#action3" id='navelement' >ABOUT US</Nav.Link>
             <Nav.Link href="#action4" id='navelement' >CONTACT</Nav.Link>
